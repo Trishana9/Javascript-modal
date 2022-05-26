@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background: #DDD6FE;
+}
+
+.container{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-btn{
+    width: 298px;
+    height: 63px;    
+    background: #7C3AED;
+    border-radius: 8px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #FEFEFE;
+    border: none;
+}
+
+.container-btn:hover{   
+    background: #8164b4;
+}
