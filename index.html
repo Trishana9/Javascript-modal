@@ -1,16 +1,33 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title> Javascript Model</title>
+    <title> Javascript Modal</title>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
   </head>
 
 <body>
 
-  <div class="container ">
-    <button class="container-btn">Click To Open Modal</button>
-
+  <div class="main-page">
+    <button class="container-btn" data-modal-target="#modal"><img style="padding-right: 10px;" src="images/Icon.png">Click To Open Modal</button>
   </div>
+
+  
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <a data-close-button class="close-button"><img src="images/Close.png"></a>
+    </div>
+    <div class="modal-body">
+      <div>
+        <p>Modal Appears Here</p>
+        <button data-close-button class="close-modal">Close Modal</button>
+   
+      </div>
+     
+    </div>
+  </div>
+  <div id="overlay"></div>
+ 
 
 </body>
 
