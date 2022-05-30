@@ -2,31 +2,34 @@
 <html>
   <head>
     <title> Javascript Modal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script.js"></script>
   </head>
 
-<body>
+<body class="bg-[#DDD6FE] ">
 
-  <div class="main-page">
-    <button class="container-btn" data-modal-target="#modal"><img style="padding-right: 10px;" src="images/Icon.png">Click To Open Modal</button>
+  <div class="main-page flex justify-center items-center h-screen">
+    <button class="container-btn bg-[#7C3AED] text-white w-[298px] h-[63px] flex justify-center items-center rounded-lg " data-modal-target="#modal"><img class="pr-4" src="images/Icon.png">Click To Open Modal</button>
   </div>
 
   
-  <div class="modal" id="modal">
-    <div class="modal-header">
-      <a data-close-button class="close-button"><img src="images/Close.png"></a>
+  <div class="modal fixed bottom-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] scale-0 z-10 h-44 transition ease-in-out delay-200 "  id="modal">
+    <div class="modal-header flex justify-end bg-transparent">
+      <a data-close-button class="close-button p-3 cursor-pointer"><img src="images/Close.png"></a>
     </div>
-    <div class="modal-body">
-      <div>
-        <p>Modal Appears Here</p>
-        <button data-close-button class="close-modal">Close Modal</button>
+    <div class="modal-body bg-white rounded-lg w-[793px] h-[511px] flex justify-center items-center">
+      <div >
+        <p class="font-bold text-2xl">Modal Appears Here</p>
+        <button data-close-button class="close-modal mx-[30px] my-5 w-[162px] h-[47px] text-[#9F1239] bg-[#FFE4E6] border-[#FECDD3] rounded-lg text-[18px] ">Close Modal</button>
    
       </div>
      
     </div>
   </div>
-  <div id="overlay"></div>
+  <div class="fixed inset-0 transition ease-in-out delay-200" id="overlay"></div>
  
 
 </body>

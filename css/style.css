@@ -1,103 +1,14 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
 }
 
-.main-page{
-    background: #DDD6FE;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+#overlay {
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.281);
+  pointer-events: none;
 }
 
-.container-btn{
-  width: 298px;
-  height: 63px;    
-  background: #7C3AED;
-  border-radius: 8px;
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  color: #FEFEFE;
-  border: none;
-  cursor: pointer;
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
-  
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    z-index: 10;
-    width: 798px;
-    height: 569px;
-  }
-  
-  .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  .modal-header {
-    display: flex;
-    justify-content: flex-end;
-    background: transparent;
-  }
-  
-  .modal-body {
-    background-color: white;
-    width: 793px;
-    height: 511px;
-    background: #FFFFFF;
-    border-radius: 8px;
-  }
-  
-  #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.281);
-    pointer-events: none;
-  }
-  
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .close-button{
-    padding: 5px;
-    cursor: pointer;
-  }
-
-  .modal-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .close-modal{
-    width: 162px;
-    height: 47px;
-    background: #FFE4E6;
-    border: 1px solid #FECDD3;
-    border-radius: 8px;
-    font-size: 18px;
-    color: #9F1239;
-    cursor: pointer;
-    margin: 30px 30px;
-  }
-
-  .modal-body p{
-    font-weight: bold;
-    font-size: 24px;
-  }
-
